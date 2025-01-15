@@ -384,36 +384,50 @@
                 </div>
                 <div class="col col-12 col-sm-6" style="max-width: 35rem;" data-aos="zoom-in-left">
                     <div class="form-container">
-                        <form>
-                            <input class="inpt w-100 mb-5" type="" name="" placeholder="Full Name*">
-                            <div class="row">
-                                <div class="col col-12 col-sm-6">
-                                    <input class="inpt w-100 mb-5" type="email" name="" placeholder="Email Address*" required>
-                                </div>
-                                <div class="col col-12 col-sm-6">
-                                    <input class="inpt w-100 mb-5" type="" name="" placeholder="Phone Number">
-                                </div>
+                        <form id="gt_form">
+                          <!-- Full Name -->
+                          <input class="inpt w-100 mb-5" type="text" name="full_name" placeholder="Full Name*" required>
+
+                          <!-- Email and Phone -->
+                          <div class="row">
+                            <div class="col col-12 col-sm-6">
+                              <input class="inpt w-100 mb-5" type="email" name="user_email" placeholder="Email Address*" required>
                             </div>
-                            <select class="inpt w-100 mb-5" name="service_area" required>
+                            <div class="col col-12 col-sm-6">
+                              <input class="inpt w-100 mb-5" type="tel" name="user_phn" placeholder="Phone Number">
+                            </div>
+                          </div>
+
+                          <!-- Preferred Service Area -->
+                          <select class="inpt w-100 mb-5" name="user_area" required>
                             <option value="" disabled selected>Preferred Service Area*</option>
                             <option value="area1">Area 1</option>
                             <option value="area2">Area 2</option>
                             <option value="area3">Area 3</option>
                           </select>
-                            <input class="inpt w-100 mb-5" type="" name="" placeholder="Select your date">
-                            <div class="row">
-                                <div class="col col-12 col-sm-6">
-                                    <input class="inpt w-100 mb-5" type="" name="" placeholder="Start time">
-                                </div>
-                                <div class="col col-12 col-sm-6">
-                                    <input class="inpt w-100 mb-5" type="" name="" placeholder="End time">
-                                </div>
+
+                          <!-- Date -->
+                          <input class="inpt w-100 mb-5" type="date" name="user_date" placeholder="Select your date" required>
+
+                          <!-- Start and End Time -->
+                          <div class="row">
+                            <div class="col col-12 col-sm-6">
+                              <input class="inpt w-100 mb-5" type="time" name="user_start_time" placeholder="Start time" required>
                             </div>
-                            <input class="inpt w-100 mb-5" type="" name="" placeholder="Message">
-                            <div class="w-100 d-flex">
-                                <button class="btn btn-primary ml-auto" type="submit">Submit</button>
+                            <div class="col col-12 col-sm-6">
+                              <input class="inpt w-100 mb-5" type="time" name="user_end_time" placeholder="End time" required>
                             </div>
+                          </div>
+
+                          <!-- Message -->
+                          <textarea class="inpt w-100 mb-5" name="user_message" placeholder="Message"></textarea>
+
+                          <!-- Submit Button -->
+                          <div class="w-100 d-flex">
+                            <button class="btn btn-primary ml-auto" type="submit">Submit</button>
+                          </div>
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -494,7 +508,7 @@
 
         // Listen for the scroll event and log the event data
         lenis.on('scroll', (e) => {
-          console.log(e);
+          // console.log(e);
         });
     </script>
 
@@ -519,5 +533,15 @@
           });
         });
     </script>
+
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
   </body>
 </html>
