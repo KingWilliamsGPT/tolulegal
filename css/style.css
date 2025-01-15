@@ -287,6 +287,28 @@ footer p a{
 footer p.lead{
     font-weight: 600;
 }
+
+#back-to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 99; /* Ensure it's above other elements */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 15px; /* Padding */
+  border-radius: 50%; /* Circular button */
+  font-size: 18px; /* Font size */
+  transition: opacity 0.3s; /* Smooth fade in/out */
+}
+
+#back-to-top:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
 /*
 element {
   position: absolute;

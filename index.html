@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,12 +15,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-
         <!-- AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.19/dist/lenis.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
 
   </head>
 
@@ -48,39 +46,39 @@
                 <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item mx-auto mx-lg-0">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="#about-section">About us</a>
               </li>
               <li class="nav-item mx-auto mx-lg-0">
-                <a class="nav-link" href="#">Our Services</a>
+                <a class="nav-link" href="#services-section">Our Services</a>
               </li>
-              <li class="nav-item mx-auto mx-lg-0">
+              <!-- <li class="nav-item mx-auto mx-lg-0">
                 <a class="nav-link" href="#">Our Blog</a>
-              </li>
+              </li> -->
               <li class="nav-item mx-auto mx-lg-0">
-                    <button class="btn btn-primary bgreen d-lg-none">Get Started</button>
+                    <a href="#form-section" class="btn btn-primary bgreen d-lg-none">Get Started</a>
               </li>
             </ul>
           </div>
 
           <!-- Get Started Button (Visible only on large screens) -->
-          <button class="btn btn-primary bgreen d-none d-lg-block ms-3">Get Started</button>
+          <a href="#form-section" class="btn btn-primary bgreen d-none d-lg-block ms-3">Get Started</a>
         </div>
       </nav>
 
         <div class="lead-text">
             <p class="lead">Legal expertise, built<br> for your business success</p>
             <p>At ToluLegal Professional Corporation, we simplify legal compliance for businesses by providing tailored advice and solution designed to meet your specific needs.</p>
-            <button class="btn btn-primary">Protect your business</button>
+            <a href="#form-section" class="btn btn-primary">Protect your business</a>
         </div>
     </section>
 
-    <section class="bg-light d-flex px-3">
+    <section class="bg-light d-flex px-3" id="about-section">
         <div class="my-container container mx-auto mt-5 mb-5">
             <h2 class="h2">Trusted Legal Solutions for Business Owners</h2> 
             <p class="pb-5">At ToluLegal, we believe success isn’t just about transactions; it’s about truly understanding your business, goals, and dreams. <br>We’re not just legal advisors; we’re partners who are committed to helping your business reach its full potential.</p> 
-            <button class="btn btn-secondary">Be our partner</button>
+            <a href="#form-section" class="btn btn-secondary">Be our partner</a>
 
-            <h2 class="h2-special mt-5 mb-5">How we can work with you</h2>
+            <h2 class="h2-special mt-5 mb-5" id="services-section">How we can work with you</h2>
             <div class="info-cards container-fluid p-md-0">
             <div class="row">
                 <!-- Card 1 -->
@@ -88,7 +86,7 @@
                     <div class="card square-card mx-auto px-3 pt-5" data-aos="fade-up" data-aos-delay="0">
                         <h4>Business Registration & Incorporation</h4>
                         <p>We guide you through every step, ensuring a smooth and hassle-free incorporation process.</p>
-                        <div><button class="btn btn-primary">Learn More</button></div>
+                        <div><a href="#form-section" class="btn btn-primary">Learn More</a></div>
                         <div>
                             <svg style="width: 133px; right: 1px; bottom: -27px;" width="198" height="184" viewBox="0 0 198 184" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_81_112)">
@@ -114,7 +112,7 @@
                     <div class="card square-card mx-auto px-3 pt-5" data-aos="fade-up" data-aos-delay="100">
                         <h4>Legal Contracts & Reviews</h4>
                         <p>Protect your business interests with expertly crafted contracts and comprehensive reviews.</p>
-                        <div><button class="btn btn-primary">Learn More</button></div>
+                        <div><a href="#form-section" class="btn btn-primary">Learn More</a></div>
                         <div>
                             <svg style="position: absolute;right: -33px;bottom: -13px;" width="224" height="196" viewBox="0 0 224 196" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M270.71 73.8024C269.821 71.6914 268.333 69.8874 266.429 68.6137C264.525 67.34 262.29 66.6524 259.999 66.6361H46.2036C43.1304 66.6377 40.1835 67.8593 38.0104 70.0324C35.8373 72.2055 34.6158 75.1523 34.6142 78.2255V348.697C34.6158 351.77 35.8373 354.717 38.0104 356.89C40.1835 359.063 43.1304 360.285 46.2036 360.287H260.007C263.08 360.282 266.025 359.06 268.198 356.888C270.37 354.715 271.592 351.77 271.597 348.697V78.2255C271.602 76.7073 271.303 75.2035 270.718 73.8024H270.71ZM269.015 348.697C269.012 351.087 268.062 353.379 266.371 355.069C264.681 356.759 262.39 357.71 259.999 357.713H46.2036C43.8129 357.712 41.5202 356.763 39.8295 355.072C38.1389 353.382 37.1887 351.089 37.1879 348.699V78.2271C37.1911 75.837 38.142 73.5457 39.8321 71.8556C41.5222 70.1655 43.8135 69.2146 46.2036 69.2114H260.007C261.808 69.2182 263.565 69.7614 265.056 70.7715C266.546 71.7816 267.702 73.213 268.375 74.8828C268.507 75.2156 268.62 75.5551 268.715 75.8999C268.919 76.6587 269.023 77.4412 269.023 78.2271L269.015 348.697Z" fill="#3F3D56"/>
@@ -132,7 +130,7 @@
                     <div class="card square-card mx-auto px-3 pt-5" data-aos="fade-up" data-aos-delay="500">
                         <h4>Corporate Governance </h4>
                         <p>Get expert advice on corporate governance, risk management, and compliance to navigate complex legal landscapes.</p>
-                        <div><button class="btn btn-primary">Learn More</button></div>
+                        <div><a href="#form-section" class="btn btn-primary">Learn More</a></div>
                         <div>
                             <svg style="position: absolute;bottom: 0;right: 0;" width="396" height="274" viewBox="0 0 396 274" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_83_294)">
@@ -165,7 +163,7 @@
                     <div class="card square-card mx-auto px-3 pt-5" data-aos="fade-up" data-aos-delay="0">
                         <h4>Intellectual Property Protection</h4>
                         <p>Secure trademarks, copyrights, and patents to protect your unique business assets.</p>
-                        <div><button class="btn btn-primary">Learn More</button></div>
+                        <div><a href="#form-section" class="btn btn-primary">Learn More</a></div>
                         <div>
                             <svg style="bottom: -46px;right: -15px;" width="222" height="265" viewBox="0 0 222 265" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_83_363)">
@@ -210,7 +208,7 @@
                     <div class="card square-card mx-auto px-3 pt-5" data-aos="fade-up" data-aos-delay="100">
                         <h4>Mergers & Acquisitions Support</h4>
                         <p>Comprehensive legal support for business mergers, acquisitions, and restructuring.</p>
-                        <div><button class="btn btn-primary">Learn More</button></div>
+                        <div><a href="#form-section" class="btn btn-primary">Learn More</a></div>
                         <div>
                             <svg style="bottom: -19px;right: -31px;transform: scale(82%);" width="338" height="206" viewBox="0 0 338 206" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_83_494)">
@@ -247,7 +245,7 @@
                     <div class="card square-card mx-auto px-3 pt-5" data-aos="fade-up" data-aos-delay="500">
                         <h4>Employment Law Advisory</h4>
                         <p>Get guidance on contracts, workplace policies, and dispute resolution to foster a compliant and productive workplace.</p>
-                        <div><button class="btn btn-primary">Learn More</button></div>
+                        <div><a href="#form-section" class="btn btn-primary">Learn More</a></div>
                         <div>
                             <svg style="bottom: -13px;right: -40px;transform: scale(90%);" width="284" height="245" viewBox="0 0 284 245" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_83_665)">
@@ -377,7 +375,7 @@
 
     </section>
 
-    <section class="contact m-0 px-3 bg-dark d-flex" style="margin-top: 4rem!important;">
+    <section class="contact m-0 px-3 bg-dark d-flex" style="margin-top: 4rem!important;" id="form-section">
         <div class="mx-auto" style="width: 998px; margin-top: 13rem; margin-bottom: 13rem;">
             <div class="row justify-content-between" >
                 <div class="col col-12 col-sm-6 mt-sm-5 mb-5 mb-sm-0" data-aos="zoom-in-right" style="max-width: 24rem;">
@@ -428,7 +426,7 @@
             <div class="row " style="margin-top: 6rem; margin-bottom: 5rem; ">
                 <div class="col col-6 col-md-3">
                     <div>
-                        <a href="/"><img src="./assets/footer_logo.png" alt="footer_logo" style="width: 138px; height: 138px;"></a>
+                        <a href="/"><img src="./assets/footer_logo.png" alt="footer_logo" style="width: 138px; height: 138px; transform: scale(150%);" ></a>
                     </div>
                 </div>
                 <div class="col col-6 col-md-3">
@@ -472,6 +470,7 @@
     </footer>
 
 
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -484,5 +483,41 @@
         <script>
           AOS.init();
         </script>
+
+    <script src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"></script> 
+    <script type="text/javascript">
+        // Initialize Lenis
+        const lenis = new Lenis({
+          autoRaf: true,
+          anchors: true,
+        });
+
+        // Listen for the scroll event and log the event data
+        lenis.on('scroll', (e) => {
+          console.log(e);
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Get the button
+        const backToTopButton = document.getElementById('back-to-top');
+
+        // Show the button when the user scrolls down 200px
+        window.onscroll = function () {
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            backToTopButton.style.display = 'block'; // Show the button
+          } else {
+            backToTopButton.style.display = 'none'; // Hide the button
+          }
+        };
+
+        // Scroll to the top of the page when the button is clicked
+        backToTopButton.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0, // Scroll to the top
+            behavior: 'smooth', // Smooth scroll
+          });
+        });
+    </script>
   </body>
 </html>
