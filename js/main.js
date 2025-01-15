@@ -21,7 +21,7 @@ $(document).ready(()=>{
 		};
 
 		formData['user_scheduled_req'] = `${formData.user_date}, from ${formData.user_start_time} to ${formData.user_end_time}`;
-
+		formData['user_name'] = formData.full_name;
 		const errors = _valEmailForm(formData);
 		if (errors.hasErrors){
 			showMsg(errors.error_html);
