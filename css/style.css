@@ -54,7 +54,7 @@ section{
 .btn-primary{
     background-color: #fff;
     color: #001f3f;
-    border-radius: 3px;
+    border-radius: 7px;
     border: 3px solid #e0e0e0;
 }
 .btn-primary:hover {
@@ -107,8 +107,17 @@ section{
     background-repeat: no-repeat; /* Prevent the image from repeating */
     padding-bottom: 4rem;
     background-position: 51% 15%;
-    background-size: 155%;
+    /* background-size: 155%; */
 }
+
+
+.glass-like {
+	background: rgba(255, 255, 255, 0.01);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	/* color: #fff; */
+}
+
 
 .testing .bred{
     border: thin solid red !important;
