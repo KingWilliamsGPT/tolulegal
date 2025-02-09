@@ -31,8 +31,8 @@ body{
 section{
     width: 100%;
 }
-.bg-dark{
-    background-color: rgba(0, 31, 63, 1) !important;
+.bg-dark {
+	background-color: #262262 !important;
 }
 
 .h2-special{
@@ -59,8 +59,8 @@ section{
 }
 .btn-primary:hover {
   color:#fff;
-  background-color: #284359;
-  border-color: #a1acb6;
+  background-color: #262262;
+  border-color: #3e387a;
 }
 .btn-primary.focus,
 .btn-primary:focus {
@@ -84,7 +84,7 @@ section{
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    background-color: rgb(0, 31, 63);
+    background-color: #262262;
 }
 
 .btn-secondary:hover {
@@ -100,12 +100,14 @@ section{
 .hero {
     min-height: 100vh; /* Full height of the viewport */
     background-image: 
-        linear-gradient(to bottom, rgba(0, 31, 63, .5), rgba(0, 31, 63, .5)), 
-        url("../assets/man_who_needs_two_terapist.png"); 
+        linear-gradient(to bottom, rgb(38, 34, 98, .5), rgb(38, 34, 98, .5)), 
+        url("../assets/you_are_fired.png"); 
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     padding-bottom: 4rem;
+    background-position: 51% 15%;
+    background-size: 155%;
 }
 
 .testing .bred{
@@ -273,12 +275,22 @@ section{
     color: #b0b8c1;
 }
 
+.square-card .link-it{
+    color: #262262 !important;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: Inter, inherit;
+    display: inline-block;
+    position: absolute;
+    z-index: 200;
+}
+
 footer p,
 footer p.lead,
 footer p a{
-    color: rgb(0, 31, 63);
+    color: #fff;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: normal;
     line-height: 6px;
     letter-spacing: -0.04em;
     white-space: nowrap;
