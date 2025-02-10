@@ -14,6 +14,11 @@ p{
     line-height: 32px;
 }
 
+.bolder-text{
+    font-weight: 600; 
+    color: #262262;
+}
+
 h2 {
     font-size: 50px;
     line-height: 72px;
